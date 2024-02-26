@@ -274,37 +274,37 @@ data-theme="light">
 
 <div class="flex flex-col gap-6 flex-grow">
   <button
-      class="btn  bg-bg_white ">A1</button>
+      class="btn  bg-bg_white add-btn ">A1</button>
   <button
-      class="btn  bg-bg_white ">B1</button>
+      class="btn  bg-bg_white add-btn">B1</button>
   <button
-      class="btn  bg-bg_white ">C1</button>
+      class="btn  bg-bg_white add-btn">C1</button>
   <button
-      class="btn  bg-bg_white ">D1</button>
+      class="btn  bg-bg_white add-btn">D1</button>
   <button
-      class="btn  bg-bg_white ">E1</button>
+      class="btn  bg-bg_white add-btn">E1</button>
   <button
-      class="btn  bg-bg_white">F1</button>
+      class="btn  bg-bg_white add-btn">F1</button>
   <button
-      class="btn  bg-bg_white ">G1</button>
+      class="btn  bg-bg_white add-btn">G1</button>
 </div>
 
 <!-- col-2 -->
 <div class="flex flex-col gap-6  flex-grow">
   <button
-      class="btn  bg-bg_white ">A2</button>
+      class="btn  bg-bg_white add-btn">A2</button>
   <button
-      class="btn  bg-bg_white ">B2</button>
+      class="btn  bg-bg_white add-btn">B2</button>
   <button
-      class="btn  bg-bg_white ">C2</button>
+      class="btn  bg-bg_white add-btn">C2</button>
   <button
-      class="btn  bg-bg_white ">D2</button>
+      class="btn  bg-bg_white add-btn">D2</button>
   <button
-      class="btn  bg-bg_white ">E2</button>
+      class="btn  bg-bg_white add-btn">E2</button>
   <button
-      class="btn  bg-bg_white ">F2</button>
+      class="btn  bg-bg_white add-btn">F2</button>
   <button
-      class="btn  bg-bg_white ">G2</button>
+      class="btn  bg-bg_white add-btn">G2</button>
 </div>
 </div>
 
@@ -312,38 +312,38 @@ data-theme="light">
 <!-- col-3 -->
 <div class="flex flex-col gap-6  flex-grow">
   <button
-      class="btn  bg-bg_white ">A3</button>
+      class="btn  bg-bg_white add-btn">A3</button>
   <button
-      class="btn  bg-bg_white ">B3</button>
+      class="btn  bg-bg_white add-btn">B3</button>
   <button
-      class="btn  bg-bg_white ">C3</button>
+      class="btn  bg-bg_white add-btn">C3</button>
   <button
-      class="btn  bg-bg_white ">D3</button>
+      class="btn  bg-bg_white add-btn">D3</button>
   <button
-      class="btn  bg-bg_white ">E3</button>
+      class="btn  bg-bg_white add-btn">E3</button>
   <button
-      class="btn  bg-bg_white ">F3</button>
+      class="btn  bg-bg_white add-btn">F3</button>
   <button
-      class="btn  bg-bg_white ">G3</button>
+      class="btn  bg-bg_white add-btn">G3</button>
 </div>
 
 <!-- cool-4 -->
 
 <div class="flex flex-col gap-6  flex-grow">
   <button
-      class="btn  bg-bg_white ">A4</button>
+      class="btn  bg-bg_white add-btn">A4</button>
   <button
-      class="btn  bg-bg_white ">B4</button>
+      class="btn  bg-bg_white add-btn">B4</button>
   <button
-      class="btn  bg-bg_white ">C4</button>
+      class="btn  bg-bg_white add-btn">C4</button>
   <button
-      class="btn  bg-bg_white ">D4</button>
+      class="btn  bg-bg_white add-btn">D4</button>
   <button
-      class="btn  bg-bg_white ">E4</button>
+      class="btn  bg-bg_white add-btn">E4</button>
   <button
-      class="btn  bg-bg_white ">F4</button>
+      class="btn  bg-bg_white add-btn">F4</button>
   <button
-      class="btn  bg-bg_white ">G4</button>
+      class="btn  bg-bg_white add-btn">G4</button>
 </div>
 </div>
 </div>
@@ -367,19 +367,24 @@ data-theme="light">
     <div class="flex gap-1">
     <div>Seat </div>
     <div>
-      <button class="text-white bg-accent text-xs rounded-md font-bold h-fit px-1">0</button>
+      <button class="text-white bg-accent text-xs rounded-md font-bold h-fit px-1 "id="seat-taken" >0</button>
     </div>
   </div>
   <div>Class</div>
   <div>Price</div>
   </div>
-  <div class="border border-dashed border-p/20 lg:my-3"></div>
+  <div class="border border-dashed border-p/20 my-3"></div>
+
+  <!-- ticket add info -->
   <div class="flex flex-col text-p/60 lg:text-base text-sm lg:gap-3"
   id="show-info"></div>
-  <div class="border border-p/20 lg:my-3"></div>
+
+  <hr>
+
+
   <!-- show total price -->
   <div
-  class="text-base_black lg:text-base text-sm font-medium flex justify-between lg:mb-3">
+  class="text-base_black text-base  font-medium flex justify-between mb-3">
   <div>
       <p>Total Price</p>
   </div>
@@ -388,65 +393,59 @@ data-theme="light">
   </div>
 </div>
 <div class="relative">
-  <input type="text" id="coupon-code" placeholder="Have any coupon?"
+  <input type="text" id="" placeholder="Have any coupon?"
       class="input input-bordered w-full text-p/40 focus:outline-accent/50" required />
   <button
       class="btn bg-accent text-white text-sm font-semibold lg:px-5 absolute right-0 top-0 bottom-0 hover:bg-accent/50"
-      id="coupon-apply" onclick="applyCoupon()">Apply</button>
+      >Apply</button>
 </div>
-<div
-                                            class="text-base_black lg:text-base text-sm font-medium flex justify-between lg:mt-3">
-                                            <div>
-                                                <p>Grand Total</p>
-                                            </div>
-                                            <div>
-                                                <p>BDT <span id="grand-total-price">0</span></p>
-                                            </div>
-                                        </div>
+<div class="text-base_black text-base  font-medium flex justify-between mt-3">
+ <div>
+      <p>Grand Total</p>
+          </div>
+            <div>
+              <p>BDT <span id="grand-total">0</span></p>
+                   </div>
+                       </div>
 
 
 </div>
 </div>
 
- <!-- necessary input fill -->
+ <!-- Input field -->
  <div>
   <!-- name -->
   <div class="label">
-      <span
-          class="label-text text-base_black font-semibold lg:text-base text-sm">Passenger
-          Name*</span>
+<span class="label-text text-base_black font-semibold lg:text-base text-sm">Passenger Name*</span>
   </div>
   <input type="text" placeholder="Enter your name"
       class="input input-bordered w-full text-p/40 focus:outline-accent/50" required />
 </div>
 
 <div>
-  <!-- phone number -->
+  <!-- Phone -->
   <div class="label">
       <span
-          class="label-text text-base_black font-semibold lg:text-base text-sm">Phone
+          class="label-text text-base_black font-semibold text-base ">Phone
           Number*</span>
   </div>
   <input type="text" id="phone" placeholder="Enter your phone number"
-      class="input input-bordered w-full text-p/40 focus:outline-accent/50" oninput="enableNextButton()" required />
+      class="input input-bordered w-full text-p/40"/>
 </div>
 
 <div>
-  <!-- email address -->
+  <!-- Email -->
   <div class="label">
-      <span
-          class="label-text text-base_black font-semibold lg:text-base text-sm">Email
-          ID*</span>
+  <span class="label-text text-base_black font-semibold text-base">Email ID*</span>
   </div>
   <input type="text" placeholder="Enter your email id"
-      class="input input-bordered w-full text-p/40 focus:outline-accent/50" required />
+  class="input input-bordered w-full text-p/40"/>
 </div>
 
 <!-- open success modal from next button -->
 <div class="lg:mb-4">
   <button
-      class="btn text-white lg:text-xl text-lg font-extrabold bg-accent w-full hover:bg-accent/50 lg:mt-3 rounded-2xl"
-      id="next-btn" onclick="my_modal_1.showModal()">Next</button>
+      class="btn text-white text-xl  font-extrabold bg-accent w-full hover:bg-accent/50 mt-3 rounded-2xl">Next</button>
 
   <dialog id="my_modal_1" class="modal">
       <div
