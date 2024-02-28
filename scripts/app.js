@@ -30,12 +30,21 @@ for(const btn of allbtn){
   
         add_info.appendChild(div);
         
+
+        
         updatedtotalcost(seatPrice);
         
+        updatedGrandTotal();
     })
  
     
 }
+function updatedGrandTotal() {
+    const total_cost = document.getElementById("total-price").innerText;
+    const sum1 = parseInt(total_cost) ;
+    document.getElementById("grand-total").innerText = sum1;
+}
+
 
 function updatedtotalcost(value){
     
@@ -43,8 +52,8 @@ function updatedtotalcost(value){
     const sum=parseInt(total_cost.innerText)+value;
     total_cost.innerText=sum;
     
-    
 }
+
 
 
 
