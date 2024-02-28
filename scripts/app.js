@@ -39,14 +39,35 @@ for(const btn of allbtn){
  
     
 }
-function updatedGrandTotal() {
-    const total_cost = document.getElementById("total-price").innerText;
+function updatedGrandTotal(status) {
+
+
+    if(status==undefined){
+        const total_cost = document.getElementById("total-price").innerText;
     const sum1 = parseInt(total_cost) ;
     document.getElementById("grand-total").innerText = sum1;
+
+    }
+
+    else{
+        const couponCode=document.getElementById("coupon-code").value;
+           
+        if(couponCode=="New15"){
+
+        }
+
+        else{
+            alert("Please enter a valid coupon code")
+        }
+    }
+    
+
 }
 
 
 function updatedtotalcost(value){
+
+              
     
     const total_cost=document.getElementById("total-price");
     const sum=parseInt(total_cost.innerText)+value;
