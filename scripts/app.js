@@ -45,7 +45,7 @@ const seatleft=document.getElementById("seat-left").innerText;
 
 document.getElementById("seat-left").innerText=seatleft-1;
 
-
+      
 
 const seattaken=document.getElementById("seat-taken").innerText;
 const converseattaken= parseInt(seattaken);
@@ -53,14 +53,32 @@ const converseattaken= parseInt(seattaken);
 
 document.getElementById("seat-taken").innerText=converseattaken+1;
 
-    })
 
+
+const firstcount=converseattaken+1;
+
+if(firstcount+1>6){
+    alert("Now your limit over ");
+    disableAllButtons();
+
+}
+
+    event.target.setAttribute("disabled",false);
+
+    })
+    
+   
 
  
     
 }
 
-
+function disableAllButtons() {
+    const allbtn = document.getElementsByClassName("add-btn");
+    for (const btn of allbtn) {
+        btn.setAttribute("disabled", true);
+    }
+}
 
 
 function updatedGrandTotal() {
