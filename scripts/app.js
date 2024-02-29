@@ -39,30 +39,45 @@ for(const btn of allbtn){
  
     
 }
-function updatedGrandTotal(status) {
 
 
-    if(status==undefined){
+
+
+function updatedGrandTotal() {
+    
+    
+    
         const total_cost = document.getElementById("total-price").innerText;
-    const sum1 = parseInt(total_cost) ;
-    document.getElementById("grand-total").innerText = sum1;
+        const sum1 = parseInt(total_cost) ;
+        document.getElementById("grand-total").innerText = sum1;
 
-    }
+    
 
-    else{
+    
+
         const couponCode=document.getElementById("coupon-code").value;
            
-        if(couponCode=="New15"){
-
+        if(couponCode ==="Couple 20"){
+            const discount= sum1*0.2;
+            document.getElementById("grand-total").innerText=sum1-discount;
+           
+             
         }
 
-        else{
-            alert("Please enter a valid coupon code")
+        else if(couponCode ==="New15"){
+            const discount= sum1*0.15;
+            document.getElementById("grand-total").innerText=sum1-discount;
+           
+             
+        }
+
+        else if(couponCode){
+            alert("Please enter a valid coupon code");
         }
     }
     
 
-}
+
 
 
 function updatedtotalcost(value){
