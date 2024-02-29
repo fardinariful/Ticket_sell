@@ -1,5 +1,6 @@
 const seatPrice = 550;
 const ticketClass = "Economy";
+const seatCapacity=40;
 
 
 
@@ -35,7 +36,26 @@ for(const btn of allbtn){
         updatedtotalcost(seatPrice);
         
         updatedGrandTotal();
+
+        // update seat number
+
+const seatleft=document.getElementById("seat-left").innerText;
+// const converseatleft= parseInt(seatleft);
+// document.getElementById("seat-left").innerText=seatCapacity-1;
+
+document.getElementById("seat-left").innerText=seatleft-1;
+
+
+
+const seattaken=document.getElementById("seat-taken").innerText;
+const converseattaken= parseInt(seattaken);
+// document.getElementById("seat-left").innerText=seatCapacity-1;
+
+document.getElementById("seat-taken").innerText=converseattaken+1;
+
     })
+
+
  
     
 }
@@ -82,13 +102,12 @@ function updatedGrandTotal() {
 
 function updatedtotalcost(value){
 
-              
-    
     const total_cost=document.getElementById("total-price");
     const sum=parseInt(total_cost.innerText)+value;
     total_cost.innerText=sum;
     
 }
+
 
 
 

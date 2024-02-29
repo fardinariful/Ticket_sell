@@ -13,11 +13,11 @@ data-theme="light">
 
          <link rel="stylesheet" href="/styles/style.css">
 </head>
-<body class="mx-20 my-10">
+<body class="my-10">
     <header>
             <!-- navber section start -->
               
-            <div class="navbar bg-base-100 raleway_font">
+            <div class="navbar bg-base-100 raleway_font w-4/5 mx-auto">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn  lg:hidden">
@@ -50,16 +50,17 @@ data-theme="light">
 
             <!-- banner section -->
 
-            <section class=" min-h-screen text-white flex flex-col justify-center items-center bg-[url(images/banner.png)] bg-no-repeat bg-center ">
+            <section class=" min-h-screen text-white flex flex-col justify-center items-center w-4/5 mx-auto bg-[url(images/banner.png)] bg-no-repeat bg-center ">
                  <div class="text-center  flex flex-col items-center gap-5">
                 <h3 class="font-extrabold text-6xl">End-to-End Travel with</h3>
                 <h3 class="font-extrabold text-6xl text-[#1DD100]">P Paribahan</h3>
                 <p>Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
-                <button class="btn bg-[#1DD100] rounded-2xl border-none  font-bold">Buy Ticket </button>
+                <button><a href="#target-seation" class="btn bg-[#1DD100] rounded-2xl border-none  font-bold ">Buy Ticket</a></button>
 
                 <!-- stat -->
-                >
-                  <div class="flex gap-10">
+                
+
+                  <div class="flex gap-10 mt-10">
                 <div class="stats stats-vertical lg:stats-horizontal shadow">
                   <div class="stat flex">
                     <div>
@@ -113,7 +114,7 @@ data-theme="light">
     <main>
       <h3 class="text-4xl text-[#030712] raleway_font font-semibold text-center">Best offers for you</h3>
       <!-- coupon start -->
-      <div class="flex flex-row gap-6">
+      <div class="flex flex-row gap-6 w-4/5 mx-auto">
       <div class="bg-amber-500 flex rounded-3xl w-full mt-12">
       <div class="flex flex-col justify-center items-center">
         <h3 class="text-5xl ml-5">15% OFF</h3>
@@ -135,16 +136,31 @@ data-theme="light">
       </div>
         <img class="ml-9" src="./images/cupon-devider.png" alt="">
       <div class="flex flex-col justify-center items-center">
-        <h3 class="text-5xl ml-12">Couple 20</h3>
+        <h3 class="text-5xl ">Couple 20</h3>
         <p>Coupon Code</p>
       </div>
     </div>
   </div>
   <!-- coupon end -->
 
+   <div class="flex flex-row justify-center mt-16">
+    <button class="btn btn-outline btn-success">See all offers</button>
+   </div>
+  
+
+
+   <!-- Bus headline -->
+
+   <div class="text-center mt-64 rounded-t-[88px] bg-[#f7f8f8] border-[#1dd100] border-t-2 w-full " id="target-seation">
+
+    <h2 class="font-extrabold text-4xl">P.H Paribahan</h2>
+    <p class="mt-6 text-lg ">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+   
   <!-- Bus description start -->
   <div class="flex flex-row  rounded-3xl mt-12  bg-white items-center mx-auto w-4/5">
   <div class="grid gap-6  w-11/12 text-left inter mx-8 my-6 " style="flex: 5;">
+
+
 
       <!-- ticket info headline -->
       <div class="flex  gap-2 flex-row justify-between items-start">
@@ -214,7 +230,7 @@ data-theme="light">
 </div>
 <!-- Bus description end -->
 
-<div class="flex gap-4">
+<div class="flex gap-4 w-4/5 mx-auto">
 <!-- Ticket booking start -->
 <div class="grid" style="flex: 1.6;">
 <div class="flex flex-col">
@@ -484,7 +500,7 @@ data-theme="light">
 </div>
 </div>
 </div>
-
+</div>
 
 </main>
 <footer
