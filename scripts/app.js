@@ -60,12 +60,18 @@ const firstcount=converseattaken+1;
 if(firstcount+1>6){
     alert("Now your limit over ");
     disableAllButtons();
+    
 
 }
 
     event.target.setAttribute("disabled",false);
-
+    btn.style.backgroundColor="#1DD100";
+    btn.style.textColor="White";
+    
+    
+    
     })
+    
     
    
 
@@ -77,7 +83,9 @@ function disableAllButtons() {
     const allbtn = document.getElementsByClassName("add-btn");
     for (const btn of allbtn) {
         btn.setAttribute("disabled", true);
+
     }
+    
 }
 
 
